@@ -1,0 +1,40 @@
+package code;
+
+import java.util.Scanner;
+
+public class taskone {
+    public static void guessingNumberGame() {
+        Scanner sc = new Scanner(System.in);
+        int number = 1 + (int) (100 * Math.random());
+        int k = 4;
+        int i;
+        int guess;
+
+        System.out.println("A number is choosen " + "between 1 to 100" + " Guess the number" + " with 4 trial");
+        for (i = 1; i <= k; i++) {
+            System.out.println("Guess the number : ");
+            guess = sc.nextInt();
+            if (number == guess) {
+                System.out.println("congratulation !!! " + "You guessed the number.");
+                break;
+            } else if (number > guess) {
+                System.out.println("The number is " + "greater than" + " guess.");
+                System.out.println("Attempts left: " + (k - i));
+
+            } else if (number < guess) {
+                System.out.println("The number is" + " less than " + "guess.");
+                System.out.println("Attempts left: " + (k - i));
+            }
+
+            if (i == k) {
+                System.out.println("Oops!!! you loose.");
+                System.out.println("You have exhausted " + k + " trials");
+                System.out.println("The number is " + number);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        guessingNumberGame();
+    }
+}
