@@ -1,0 +1,37 @@
+Guess the Number Game-
+
+A simple Java console game where the player has to guess a randomly generated number between 1 and 100 within 4 attempts. After each guess, the program provides feedback to help the player determine if the guess is too high or too low. The game ends when the player either guesses the correct number or runs out of attempts, revealing the correct number if the player is unsuccessful.
+
+Features-
+
+1.)Randomly generated number between 1 and 100.
+2.)4 attempts to guess the correct number.
+3.)Feedback after each guess (too high or too low).
+4.)Remaining attempts displayed after each guess.
+5.)The correct number is revealed if the player doesn't guess it.
+
+How to Run-
+
+1.)Clone the repository or download the project files.
+2.)Open the project in your preferred IDE (like IntelliJ IDEA or VSCode).
+3.)Compile and run the taskone.java file.
+4.)Follow the prompts to play the game.
+
+Code Overview-
+
+1.)The game uses:
+a) Math.random() for generating the random number.
+b) A for loop to give the player 4 attempts.
+c) Conditional statements to compare the player's guess with the random number and provide feedback.
+
+
+Example-
+
+A number is chosen between 1 to 100. Guess the number with 4 trials.
+Guess the number: 50
+The number is greater than your guess. Attempts left: 3
+Guess the number: 75
+The number is less than your guess. Attempts left: 2
+Guess the number: 63
+Congratulations!!! 
+You guessed the number.
